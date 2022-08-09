@@ -70,7 +70,7 @@ class Page extends CI_Controller
             if ($id = $this->cadastro_model->insert_aluno($dados_insert)) {
 
                 set_msg('<p>"O cadastro foi realizado com sucesso"</p>');
-                redirect('buscar', 'refresh');
+                redirect('page/editar/' . $id, 'refresh');
             } else {
                 set_msg('<p>"Falha ao realizar cadastro"</p>');
             }

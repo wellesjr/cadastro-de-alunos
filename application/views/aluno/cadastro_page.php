@@ -199,11 +199,16 @@
                                                                                         ?>
                                                     </div>
                                                     <hr>
-                                                </div>
+                                                </div><?php
+                                                        echo form_submit('salvar', 'Alterar', array('class' => 'btn btn-primary center'));
+                                                        echo form_close(); ?>
+                                                    <a href="<?= base_url('buscar') ?>">
+                                                    <button type=" button" class="btn btn-primary">listar</button>
+                                                    </a>
+                                                    <a href="<?= base_url('cadastro') ?>">
+                                                        <button type=" button" class="btn btn-primary">Novo</button>
+                                                    </a>
                                             </div>
-                                            <?php
-                                            echo form_submit('salvar', 'Alterar', array('class' => 'btn btn-primary center'));
-                                            echo form_close(); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +300,7 @@
                                                             echo form_close(); ?>
                                                         </div>
                                                         <div class="col-md-2">
-                                                            <a href="<?= base_url('home') ?>">
+                                                            <a href="<?= base_url('buscar') ?>">
                                                                 <button type=" button" class="btn btn-danger">Não</button>
                                                             </a>
                                                         </div>
