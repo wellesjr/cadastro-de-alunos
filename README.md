@@ -33,7 +33,7 @@ Altere a seguinte linha no arquivo de configurações do projeto para funcionar 
 
 (cadastro-de-alunos/application/config/config.php)
 ```PHP
-$config['base_url'] = 'http://localhost/cadastro-de-alunos';
+$config['base_url'] = 'http://localhost/cadastro-de-alunos/';
 ```
 ### Para realizar o login use as credenciais
 E-mail: ```administrador@aluno.com.br```  e 
